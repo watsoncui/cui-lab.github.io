@@ -1,10 +1,8 @@
-# Cui-lab.github.io
+# Reproducible Research Resources
 
-## The Cui Lab GitHub-hosted home page
+## [The Cui Lab GitHub-hosted home page](http://cui-lab.github.io/)
 
-### Reproducible Research Resources
-
-#### Why use version control?
+### Why use version control?
 
 If you have ever ...
 
@@ -19,7 +17,7 @@ If you have, then version control can help.
 
 Yes, there is learning curve, but it will save you time in the long run if you code a lot.
 
-#### Why use GitHub for version control?
+### Why use GitHub for version control?
 
 Not only is GitHub multiplatform (Linux, Mac, Windows) and open source, but users clone (copy) the entire respository (project), so working offline is easy.  Plus, it appears that GitHub is currently the most popular version control platform (with commits to the cloud), so collaborating with others should be relatively easy with GitHub.
 
