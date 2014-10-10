@@ -1,7 +1,5 @@
 # Reproducible Research Resources
 
-## From the [Cui Lab GitHub-hosted home page](http://cui-lab.github.io/)
-
 It should be obvious why reproducible research (RR) is preferred to non-reproducible research.  Googling "reproducible research" will provide all the details.  Needless to say, most published research is very difficult to reproduce and hence the results of much published research can easily be called into question.  A simple remedy is to do all research in a reproducible manner, from the very beginning exploratory analyses.
 
 Dynamic report generation and version control can help!  Hence, we consider knitr and GitHub below.
