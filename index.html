@@ -27,38 +27,52 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        <h1>
+<a name="reproducible-research-resources" class="anchor" href="#reproducible-research-resources"><span class="octicon octicon-link"></span></a>Reproducible Research Resources</h1>
+
+<p>It should be obvious why reproducible research (RR) is preferred to non-reproducible research.  Googling "reproducible research" should provide all the details.  Needless to say, most published research data analyses are very difficult to reproduce and hence the results of these analyses can easily be called into question.  A simple remedy is to do all research in a reproducible manner, from the very beginning, the exploratory analyses.</p>
+
+<p>Dynamic report generation and version control can help!  Hence, we consider knitr and GitHub below.</p>
 
 <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="knitr-the-dynamic-report-generation-engine-for-r" class="anchor" href="#knitr-the-dynamic-report-generation-engine-for-r"><span class="octicon octicon-link"></span></a>knitr, the dynamic report generation engine for R</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<ul>
+<li><a href="http://yihui.name/knitr/demo/minimal/">Review of knitr</a></li>
+<li><a href="https://github.com/yihui/knitr-examples/">knitr examples</a></li>
+<li>For non-PDFLaTeX output like .html or .docx, try using R Markdown (.Rmd) as it is quite easy to implement</li>
+<li>knitr can be used with LaTeX slides and posters, in the same way as LaTeX documents</li>
+<li>Figures and plots are easy with knitr</li>
+<li>Formatted tables, not so much, but we can work on that</li>
+</ul>
 
 <h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<a name="why-use-version-control" class="anchor" href="#why-use-version-control"><span class="octicon octicon-link"></span></a>Why use version control?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p>If you have ever ...</p>
+
+<ul>
+<li>changed your code, then sometime later, wanted to revert back to your old code</li>
+<li>had to develop multiple versions of your code</li>
+<li>wanted to merge one feature into a different version of your code</li>
+<li>lost the code backup you needed</li>
+<li>wanted to test a new feature without messing with your working code</li>
+<li>been distracted by too much commented code that you kept just in case</li>
+<li>been frustrated by the logistics of collaborative writing (either code or documents)</li>
+</ul>
+
+<p>If you have, then version control can help, especially if you code a lot.</p>
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a name="why-use-github-for-version-control" class="anchor" href="#why-use-github-for-version-control"><span class="octicon octicon-link"></span></a>Why use GitHub for version control?</h3>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Not only is GitHub multiplatform (Linux, Mac, Windows) and open source, but users clone (copy) the entire respository (project), so working offline is easy.  Plus, it appears that GitHub is currently (2014) the most popular version control platform (with commits to the cloud), so collaborating with others should be relatively easy with GitHub.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>Plus GitHub should handle any text-based file format well, whether that is .R, .tex, .Rnw, .Rmd, .sh, .cpp, .py, etc.</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p>No private repositories are possible with a standard free GitHub account, so please apply for an <a href="https://education.github.com/discount_requests/new">educational discount</a> after signing in with your University email address.  Your account <a href="https://github.com/blog/1775-github-goes-to-school">should</a> be upgraded to a free Micro account for the next two years, which means up to 5 private repositories.  If 5 private repositories per user is insufficient, then instead of GitHub, we can consider using <a href="https://bitbucket.org/plans">Bitbucket</a>, which has an "unlimited academic plan".</p>
+
+<p>There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is learning curve, but it will save time in the long run.</p>
       </section>
     </div>
 
