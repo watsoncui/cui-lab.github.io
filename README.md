@@ -37,7 +37,7 @@ No private repositories are possible with a standard free GitHub account, so ple
 
 There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is a learning curve, but it will save time in the long run.
 
-### Fast GitHub Tutorial
+### GitHub Tutorial
 
 As an example, let's use the README.md file which is the basis for this webpage.
 
