@@ -19,7 +19,7 @@ If you have ever ...
 
 - changed your code, then sometime later, wanted to revert back to your old code
 - had to develop multiple versions of your code
-- wanted to merge one feature into a different version of your code
+- wanted to merge a new feature into a different version of your code
 - lost the code backup you needed
 - wanted to test a new feature without messing with your working code
 - been distracted by too much commented code that you kept just in case
@@ -31,8 +31,17 @@ If you have, then version control can help, especially if you code a lot.
 
 Not only is GitHub multiplatform (Linux, Mac, Windows) and open source, but users clone (copy) the entire respository (project), so working offline is easy.  Plus, it appears that GitHub is currently (2014) the most popular version control platform (with commits to the cloud), so collaborating with others should be relatively easy with GitHub.
 
-Plus GitHub should handle any text-based file format well, whether that is .R, .tex, .Rnw, .Rmd, .sh, .cpp, .py, etc.
+Plus GitHub should handle any text-based file format well, whether that is .R, .tex, .Rnw, .Rmd, .md, .sh, .cpp, .py, etc.
 
 No private repositories are possible with a standard free GitHub account, so please apply for an [educational discount](https://education.github.com/discount_requests/new) after signing in with your University email address.  Your account [should](https://github.com/blog/1775-github-goes-to-school) be upgraded to a free Micro account for the next two years, which means up to 5 private repositories.  If 5 private repositories per user is insufficient, then instead of GitHub, we can consider using [Bitbucket](https://bitbucket.org/plans), which has an "unlimited academic plan".
 
-There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is learning curve, but it will save time in the long run.
+There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is a learning curve, but it will save time in the long run.
+
+### Fast GitHub Tutorial
+
+As an example, let's use the README.md file which is the basis for this webpage.
+
+1. 
+
+
+
