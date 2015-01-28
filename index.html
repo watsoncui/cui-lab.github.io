@@ -28,14 +28,14 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="reproducible-research-resources" class="anchor" href="#reproducible-research-resources"><span class="octicon octicon-link"></span></a>Reproducible Research Resources</h1>
+<a id="reproducible-research-resources" class="anchor" href="#reproducible-research-resources" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reproducible Research Resources</h1>
 
-<p>It should be obvious why reproducible research (RR) is preferred to non-reproducible research.  Googling "reproducible research" should provide all the details.  Needless to say, most published research data analyses are very difficult to reproduce and hence the results of these analyses can easily be called into question.  A simple remedy is to do all research in a reproducible manner, from the very beginning, the exploratory analyses.</p>
+<p>It should be obvious why reproducible research (RR) is preferred to non-reproducible research.  Googling "reproducible research" should provide all the details.  Needless to say, most published research data analyses are very difficult to reproduce and hence the results of these analyses can easily be called into question.  A simple remedy is to do all research in a reproducible manner, from the very beginning with the exploratory analyses.</p>
 
 <p>Dynamic report generation and version control can help!  Hence, we consider knitr and GitHub below.</p>
 
 <h3>
-<a name="knitr-the-dynamic-report-generation-engine-for-r" class="anchor" href="#knitr-the-dynamic-report-generation-engine-for-r"><span class="octicon octicon-link"></span></a>knitr, the dynamic report generation engine for R</h3>
+<a id="knitr-the-dynamic-report-generation-engine-for-r" class="anchor" href="#knitr-the-dynamic-report-generation-engine-for-r" aria-hidden="true"><span class="octicon octicon-link"></span></a>knitr, the dynamic report generation engine for R</h3>
 
 <ul>
 <li><a href="http://yihui.name/knitr/demo/minimal/">Review of knitr</a></li>
@@ -47,32 +47,98 @@
 </ul>
 
 <h3>
-<a name="why-use-version-control" class="anchor" href="#why-use-version-control"><span class="octicon octicon-link"></span></a>Why use version control?</h3>
+<a id="why-use-version-control" class="anchor" href="#why-use-version-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why use version control?</h3>
 
 <p>If you have ever ...</p>
 
 <ul>
 <li>changed your code, then sometime later, wanted to revert back to your old code</li>
 <li>had to develop multiple versions of your code</li>
-<li>wanted to merge one feature into a different version of your code</li>
+<li>wanted to merge a new feature into a different version of your code</li>
 <li>lost the code backup you needed</li>
 <li>wanted to test a new feature without messing with your working code</li>
-<li>been distracted by too much commented code that you kept just in case</li>
+<li>been distracted by too much commented code that you kept "just in case"</li>
 <li>been frustrated by the logistics of collaborative writing (either code or documents)</li>
 </ul>
 
 <p>If you have, then version control can help, especially if you code a lot.</p>
 
 <h3>
-<a name="why-use-github-for-version-control" class="anchor" href="#why-use-github-for-version-control"><span class="octicon octicon-link"></span></a>Why use GitHub for version control?</h3>
+<a id="why-use-github-for-version-control" class="anchor" href="#why-use-github-for-version-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why use GitHub for version control?</h3>
 
 <p>Not only is GitHub multiplatform (Linux, Mac, Windows) and open source, but users clone (copy) the entire respository (project), so working offline is easy.  Plus, it appears that GitHub is currently (2014) the most popular version control platform (with commits to the cloud), so collaborating with others should be relatively easy with GitHub.</p>
 
-<p>Plus GitHub should handle any text-based file format well, whether that is .R, .tex, .Rnw, .Rmd, .sh, .cpp, .py, etc.</p>
+<p>Plus GitHub should handle any text-based file format well, whether that is .R, .tex, .Rnw, .Rmd, .md, .sh, .cpp, .py, etc.</p>
 
 <p>No private repositories are possible with a standard free GitHub account, so please apply for an <a href="https://education.github.com/discount_requests/new">educational discount</a> after signing in with your University email address.  Your account <a href="https://github.com/blog/1775-github-goes-to-school">should</a> be upgraded to a free Micro account for the next two years, which means up to 5 private repositories.  If 5 private repositories per user is insufficient, then instead of GitHub, we can consider using <a href="https://bitbucket.org/plans">Bitbucket</a>, which has an "unlimited academic plan".</p>
 
-<p>There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is learning curve, but it will save time in the long run.</p>
+<p>There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is a learning curve, but using version control, like GitHub, will save time in the long run.</p>
+
+<h3>
+<a id="github-hello-world-tutorial" class="anchor" href="#github-hello-world-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub "Hello, world!" Tutorial</h3>
+
+<p>Let's use the GitHub GUI to start a simple repository.</p>
+
+<ol>
+<li>Create a GitHub user account at <a href="https://github.com/">github.com</a>.</li>
+<li>Once logged in, click the "+" (plus) sign in the top right-hand corner, and select "New repository".</li>
+<li>Name the repository "helloworld", select "Initialize this repository with a README" and select "Create Repository".</li>
+<li>Click on the README.md link and then on the pencil icon to edit README.md.</li>
+<li>Write in "Hello, world!" on the third line, then click "Commit changes" at the bottom.</li>
+<li>The file should be updated with your text. You can even turn your README.md file into a website by following the directions at the <a href="https://pages.github.com/">GitHub Pages</a> site.</li>
+</ol>
+
+<h3>
+<a id="github-pull-request-tutorial" class="anchor" href="#github-pull-request-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Pull Request Tutorial</h3>
+
+<p>As an example, let's use the README.md file which is the basis for this webpage.</p>
+
+<ol>
+<li>Sign in to GitHub, if not already signed in, and go to the GitHub respository for this page: <a href="https://github.com/cui-lab/cui-lab.github.io">https://github.com/cui-lab/cui-lab.github.io</a>.</li>
+<li>Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account</li>
+<li>Copy the HTTPS clone URL (notated by <code>*HTTPS_clone_URL*</code>) on the right side of the page.</li>
+<li>In the terminal, change directory into your prefered working directory and input the command: <code>$ git clone *HTTPS_clone_URL*</code>
+</li>
+<li>Change directory into cui-lab.github.io and make and save some changes to README.md.</li>
+<li>Input the following terminal commands <code>$ git add README.md</code>
+</li>
+<li>$ git commit -m "made a few changes" # -m means comment</li>
+<li>Use git push to push to youraccount</li>
+<li>On youraccount's GitHub and on the cloned repository, click on Pull Requests, and then click New pull request, the owner will check your pull request and decide whether to accept/merge changes</li>
+</ol>
+
+<h3>
+<a id="github-ssh-key-tutorial" class="anchor" href="#github-ssh-key-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub SSH Key Tutorial</h3>
+
+<p>Because putting in the username and password each time is a hassle...</p>
+
+<ol>
+<li>Assuming you have a GitHub account and git is installed on your computer</li>
+<li>Change directory to ~/.ssh and check to see if you already have an rsa key, if you do, you can skip steps 3-5</li>
+<li>Generate the SSH key with $ ssh-keygen -t rsa</li>
+<li>Replace 'user' in the following question, with a user name: "Enter file in which to save the key (/home/user/.ssh/id_rsa): user_id_rsa</li>
+<li>Do not enter a passphrase</li>
+<li>GitHub youraccount settings &gt; SSH keys under personal settings &gt; Add SSH key</li>
+<li>$ cat cui-lab_id_rsa.pub and copy the key and paste it into the SSH keys website with a title (like the name of the computer) and click on Add key</li>
+<li>Verify that everything is okay by using $ ssh -T <a href="mailto:git@github.com">git@github.com</a>
+Hopefully the output states: Hi! You've successfully authenticated, but GitHub does not provide shell access.
+If it states something else, follow the directions</li>
+<li>Start an new GitHub respository called test</li>
+<li>Make a new directory for your respository ~/github$ mkdir test and cd into this directory</li>
+<li>~/github/test$ git init</li>
+<li>$ git remote add origin <a href="mailto:git@github.com">git@github.com</a>:githubusername/test.git</li>
+<li>$ git remote -v
+we should see:
+origin  <a href="mailto:git@github.com">git@github.com</a>:githubusername/test.git (fetch)
+origin  <a href="mailto:git@github.com">git@github.com</a>:githubusername/test.git (push)</li>
+<li>Create a README text file</li>
+<li>$ git add README</li>
+<li>$ git commit -m "some comment about the commit"</li>
+<li>$ git push origin master # Where we are listing the default values of origin (respository) and master (branch)</li>
+<li>Edit the file on the GitHub website and commit changes to the master branch</li>
+<li>Pull the changed README file into our local directory: $ git pull origin master</li>
+<li>Check to see that the local file has the change.  Then make a change with the local computer and repeat steps 15-17 to make the change in the GitHub repository and then confirm the change on the GitHub website</li>
+</ol>
       </section>
     </div>
 
