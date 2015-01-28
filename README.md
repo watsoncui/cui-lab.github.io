@@ -43,5 +43,5 @@ As an example, let's use the README.md file which is the basis for this webpage.
 
 1. 
 
-
+### GitHub and My Own Files
 
