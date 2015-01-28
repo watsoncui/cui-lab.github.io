@@ -58,7 +58,7 @@ As an example, let's use the README.md file which is the basis for this webpage.
 4. In the terminal, change directory into your prefered working directory and input the command: `$ git clone HTTPS_clone_URL`
 5. Change directory into cui-lab.github.io and make, and save, some changes to README.md.
 6. Add the README.md file to the index to prepare for the next commit using the command: `$ git add README.md`
-7. Commit this file `$ git commit -m "made a few changes"`
+7. Commit this `$ git commit -m "made a few changes"`
 8. Use git push to push to youraccount
 9. On youraccount's GitHub and on the cloned repository, click on Pull Requests, and then click New pull request, the owner will check your pull request and decide whether to accept/merge changes
 
