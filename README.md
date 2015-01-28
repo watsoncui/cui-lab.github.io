@@ -41,8 +41,17 @@ There are plenty of GitHub tutorials online in both written and video formats.  
 
 As an example, let's use the README.md file which is the basis for this webpage.
 
-1. 
-
+1. Go to the GitHub respository for this page: https://github.com/cui-lab/cui-lab.github.io
+2. While signed in to GitHub and on the repository page of interest, click the Fork button, to fork your own copy of _ to your account
+3. Copy the HTTPS clone URL: https://github.com/youraccount/cui-lab.github.io.git
+4. At preferred directory on your local computer: $ git clone https://github.com/youraccount/cui-lab.github.io.git
+5. Changes can be made to README.md
+6. $ git add README.md 
+7. $ git commit -m "made a few changes" # -m means comment
+8. Use git push to push to youraccount
+9. On youraccount's GitHub and on the cloned repository, click on Pull Requests, and then click New pull request
 
 ### add some thing by watson
 ### add other by watson
+
+### GitHub and My Own Files
