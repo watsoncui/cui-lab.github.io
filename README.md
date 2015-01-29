@@ -87,7 +87,7 @@ The output should be:
 The `origin master` indicate that we are pushing into the repository named origin and the master branch.  Unlike in the previous tutorial, you will not need to input your GitHub username and password.
 12. The README.txt should appear on the GitHub website.  Make some changes to this file using the GitHub website and commit the changes to the master branch.
 13. Pull the changed README.txt file into our local directory using the following terminal command: `$ git pull origin master`
-14. Check to see that the local file has the most recent changes.  Then make other changes with your local computer and repeat steps 15-17 to see the change  reflected in the GitHub repository and then confirm the changes on the GitHub website.
+14. Check to see that the local file has the most recent changes.  Then make other changes with your local computer and use the commands in step 11 to see the changes reflected in the GitHub repository and then confirm the changes on the GitHub website.
 
 # More on Branching and Merging
 
