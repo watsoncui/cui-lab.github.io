@@ -80,7 +80,7 @@ Use an SSH key if you don't want to have to input your username and password eac
 6. The public key can be copied from `$ cat user_id_rsa.pub` and pasted in the "Key" space.  After adding a title, for instance the name of the computer, click on Add key.
 7. Verify that the SSH key was correctly set up by using this terminal command: `$ ssh -T git@github.com`.  Hopefully the output states something like:
 `Hi! You've successfully authenticated, but GitHub does not provide shell access.`  If not, then follow the given instructions, or Google the output for help online.
-8. Start an new GitHub repository called test.
+8. Start an new GitHub repository called "test".
 9. Make a new directory for your repository, on your local computer, and change directory into this directory.
 10. Use the following commands, making sure to replace `GitHub_username` with your GitHub username:
 `$ git init`, then `$ git remote add origin git@github.com:GitHub_username/test.git` and then `$ git remote -v`.
