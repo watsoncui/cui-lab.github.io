@@ -64,8 +64,8 @@ $ git config --global user.email GitHub_useremail@example.com
 6. Change directory into cui-lab.github.io and then make, and save, some changes to README.md.
 7. Add the README.md file to the index to prepare for the next commit using the command: `$ git add README.md`
 8. Commit and comment (in quotes, after the `-m` option) on your commit using the example command: `$ git commit -m "made a few changes"`
-9. Push the committed file(s) to your GitHub repository using the command: `$ git push`
-10. On youraccount's GitHub and on the cloned repository, click on Pull Requests, and then click New pull request, the owner will check your pull request and decide whether to accept/merge changes
+9. Push the committed file(s) to your GitHub repository using the following command and then inputing your username and password: `$ git push`
+10. You should then see the changes on the cloned repository on your account.  If you would like to submit your changes to the original owner of the cloned repository, then on the page for your cloned repository, click on the "Pull Requests" and create a new pull request.  The owner will check your pull request and decide whether to accept and merge your changes.
 
 ### GitHub SSH Key Tutorial
 
