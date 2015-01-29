@@ -53,7 +53,7 @@ Let's use the GitHub GUI to start a simple repository.
 As an example, let's use the README.md file which is the basis for this webpage.
 
 1. Install `git` on your computer and set the global user name and user email with the following example terminal commands:
-```bash
+```
 $ git config --global user.name "GitHub_username"
 $ git config --global user.email GitHub_useremail@example.com
 ```
@@ -69,36 +69,43 @@ $ git config --global user.email GitHub_useremail@example.com
 
 ### GitHub SSH Key Tutorial
 
-Because putting in the username and password each time is a hassle...
+If you don't want to have to input your username and password each time you `git push`.
 
-1. Assuming you have a GitHub account and git is installed on your computer
-2. Change directory to ~/.ssh and check to see if you already have an rsa key, if you do, you can skip steps 3-5
-3. Generate the SSH key with $ ssh-keygen -t rsa
-4. Replace 'user' in the following question, with a user name: "Enter file in which to save the key (/home/user/.ssh/id_rsa): user_id_rsa
-5. Do not enter a passphrase
-6. GitHub youraccount settings > SSH keys under personal settings > Add SSH key
-7. $ cat cui-lab_id_rsa.pub and copy the key and paste it into the SSH keys website with a title (like the name of the computer) and click on Add key
-8. Verify that everything is okay by using $ ssh -T git@github.com
-Hopefully the output states: Hi! You've successfully authenticated, but GitHub does not provide shell access.
-If it states something else, follow the directions
-9. Start an new GitHub respository called test
-10. Make a new directory for your respository ~/github$ mkdir test and cd into this directory
-11. ~/github/test$ git init
-12. $ git remote add origin git@github.com:githubusername/test.git
-13. $ git remote -v
-we should see:
-origin  git@github.com:githubusername/test.git (fetch)
-origin  git@github.com:githubusername/test.git (push)
-14. Create a README text file
-15. $ git add README
-16. $ git commit -m "some comment about the commit"
-17. $ git push origin master # Where we are listing the default values of origin (respository) and master (branch)
-18. Edit the file on the GitHub website and commit changes to the master branch
-19. Pull the changed README file into our local directory: $ git pull origin master
-20. Check to see that the local file has the change.  Then make a change with the local computer and repeat steps 15-17 to make the change in the GitHub repository and then confirm the change on the GitHub website
+1. Assuming you have a GitHub account and git is installed on your computer, change directory to ~/.ssh and check to see if you already have a public RSA key.  If you do, skip steps 2-4.
+2. Generate an SSH key with the command: `$ ssh-keygen -t rsa`
+3. Upon the question, "Enter file in which to save the key (/home/user/.ssh/id_rsa):", use something like "user_id_rsa", but replace the "user" part. 
+4. Do not enter a passphrase.
+5. After logging in to GitHub, open Settings > SSH keys > Add SSH key.
+6. The public key can be copied from `$ cat user_id_rsa.pub` and pasted in the "Key" space.  After adding a title, for instance the name of the computer, click on Add key.
+7. Verify that the SSH key was correctly set up by using this terminal command: `$ ssh -T git@github.com`.  Hopefully the output states something like:
+```
+Hi! You've successfully authenticated, but GitHub does not provide shell access.
+```
+8. Start an new GitHub respository called test.
+9. Make a new directory for your respository, on your local computer, and cd into this directory.
+10. Use the following commands, making sure to replace `GitHub_username` with your GitHub username:
+``
+$ git init
+$ git remote add origin git@github.com:GitHub_username/test.git
+$ git remote -v
+```
+The output should be:
+```
+origin  git@github.com:GitHub_username/test.git (fetch)
+origin  git@github.com:GitHub_username/test.git (push)
+```
+11. Create a README.txt text file in your repository's directory, then use the following commands:
+```
+$ git add README.txt
+$ git commit -m "some comment about the commit"
+$ git push origin master
+```
+The `origin master` indicate that we are pushing into the repository named origin and the master branch.  Unlike in the previous tutorial, you will not need to input your GitHub username and password.
+12. The README.txt should appear on the GitHub website.  Make some changes to this file using the GitHub website and commit the changes to the master branch.
+13. Pull the changed README.txt file into our local directory using the following terminal command: `$ git pull origin master`
+14. Check to see that the local file has the most recent changes.  Then make other changes with your local computer and repeat steps 15-17 to see the change  reflected in the GitHub repository and then confirm the changes on the GitHub website.
 
 # More on Branching and Merging
 
 Until a simplified tutorial on this is written, allow Google to be your teacher.
-
 
