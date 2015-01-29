@@ -37,6 +37,10 @@ No private repositories are possible with a standard free GitHub account, so ple
 
 There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is a learning curve, but using version control, like GitHub, will save time in the long run.
 
+### Is Git different from GitHub?
+
+Good question.  Yes, GitHub is different from Git.  To simply explain the difference, [Git](http://en.wikipedia.org/wiki/Git_%28software%29) is a command-lineversion control tool that can work on a local computer without the use of the internet.  Git is the software system that GitHub works on.  [GitHub](http://en.wikipedia.org/wiki/GitHub) hosts online Git repositories and provides a web-based GUI so that multiple users can easily collaborate on repositories.
+
 ### GitHub "Hello, world!" Tutorial
 
 Let's use the GitHub GUI to start a simple repository.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, most important to our lab, into these few tutorials.
