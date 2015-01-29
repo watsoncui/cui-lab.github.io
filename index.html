@@ -66,18 +66,23 @@
 <h3>
 <a id="why-use-github-for-version-control" class="anchor" href="#why-use-github-for-version-control" aria-hidden="true"><span class="octicon octicon-link"></span></a>Why use GitHub for version control?</h3>
 
-<p>Not only is GitHub multiplatform (Linux, Mac, Windows) and open source, but users clone (copy) the entire respository (project), so working offline is easy.  Plus, it appears that GitHub is currently (2014) the most popular version control platform (with commits to the cloud), so collaborating with others should be relatively easy with GitHub.</p>
+<p>Not only is GitHub multiplatform (Linux, Mac, Windows) and open source, but users clone (copy) the entire repository (project), so working offline is easy.  Plus, it appears that GitHub is currently (2014) the most popular version control platform (with commits to the cloud), so collaborating with others should be relatively easy with GitHub.</p>
 
 <p>Plus GitHub should handle any text-based file format well, whether that is .R, .tex, .Rnw, .Rmd, .md, .sh, .cpp, .py, etc.</p>
 
 <p>No private repositories are possible with a standard free GitHub account, so please apply for an <a href="https://education.github.com/discount_requests/new">educational discount</a> after signing in with your University email address.  Your account <a href="https://github.com/blog/1775-github-goes-to-school">should</a> be upgraded to a free Micro account for the next two years, which means up to 5 private repositories.  If 5 private repositories per user is insufficient, then instead of GitHub, we can consider using <a href="https://bitbucket.org/plans">Bitbucket</a>, which has an "unlimited academic plan".</p>
 
-<p>There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is a learning curve, but using version control, like GitHub, will save time in the long run.</p>
+<h3>
+<a id="is-git-different-from-github" class="anchor" href="#is-git-different-from-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Is Git different from GitHub?</h3>
+
+<p>Good question.  Yes, GitHub is different from Git.  To simply explain the difference, <a href="http://en.wikipedia.org/wiki/Git_%28software%29">Git</a> is a command-line version control tool that can work on a local computer without the use of the internet.  Git is the software system that GitHub works on.  <a href="http://en.wikipedia.org/wiki/GitHub">GitHub</a> hosts online Git repositories and provides a web-based GUI so that multiple users can easily collaborate on repositories.</p>
+
+<p>Please try the following tutorials to get more familiar with both Git and GitHub.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, which are most important to our lab, into these few tutorials.  Yes, there will be a learning curve, but using version control for research will (probably) save time in the long run.</p>
 
 <h3>
 <a id="github-hello-world-tutorial" class="anchor" href="#github-hello-world-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub "Hello, world!" Tutorial</h3>
 
-<p>Let's use the GitHub GUI to start a simple repository.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, most important to our lab, into these few tutorials.</p>
+<p>Let's use the GitHub GUI to start a simple repository.</p>
 
 <ol>
 <li>Create a GitHub user account at <a href="https://github.com/">github.com</a>.</li>
@@ -96,10 +101,10 @@
 <ol>
 <li>Install <code>git</code> on your computer and set the global user name and user email with the following example terminal commands:
 <code>$ git config --global user.name "GitHub_username"</code>, then <code>$ git config --global user.email GitHub_useremail@example.com</code>.</li>
-<li>Sign in to GitHub, if not already signed in, and go to the GitHub respository for this page: <a href="https://github.com/cui-lab/cui-lab.github.io">https://github.com/cui-lab/cui-lab.github.io</a>.</li>
-<li>Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account.</li>
+<li>Sign in to GitHub, if not already signed in, and go to the GitHub repository for this page: <a href="https://github.com/cui-lab/cui-lab.github.io">https://github.com/cui-lab/cui-lab.github.io</a>.</li>
+<li>Click the "Fork" button, to fork your own copy of the cui-lab.github.io repository to your account.</li>
 <li>Copy the HTTPS clone URL (notated by <code>HTTPS_clone_URL</code>) on the right side of the page.</li>
-<li>In the terminal, change directory into your prefered working directory and input the command: <code>$ git clone HTTPS_clone_URL</code>.</li>
+<li>In the terminal, change directory into your preferred working directory and input the command: <code>$ git clone HTTPS_clone_URL</code>.</li>
 <li>Change directory into cui-lab.github.io and then make, and save, some changes to README.md.</li>
 <li>Add the README.md file to the index to prepare for the next commit using the command: <code>$ git add README.md</code>.</li>
 <li>Commit and comment (in quotes, after the <code>-m</code> option) on your commit using the example command: <code>$ git commit -m "made a few changes"</code>.</li>
@@ -121,8 +126,8 @@
 <li>The public key can be copied from <code>$ cat user_id_rsa.pub</code> and pasted in the "Key" space.  After adding a title, for instance the name of the computer, click on Add key.</li>
 <li>Verify that the SSH key was correctly set up by using this terminal command: <code>$ ssh -T git@github.com</code>.  Hopefully the output states something like:
 <code>Hi! You've successfully authenticated, but GitHub does not provide shell access.</code>  If not, then follow the given instructions, or Google the output for help online.</li>
-<li>Start an new GitHub respository called test.</li>
-<li>Make a new directory for your respository, on your local computer, and change directory into this directory.</li>
+<li>Start an new GitHub repository called test.</li>
+<li>Make a new directory for your repository, on your local computer, and change directory into this directory.</li>
 <li>Use the following commands, making sure to replace <code>GitHub_username</code> with your GitHub username:
 <code>$ git init</code>, then <code>$ git remote add origin git@github.com:GitHub_username/test.git</code> and then <code>$ git remote -v</code>.
 The output should be:
