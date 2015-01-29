@@ -52,15 +52,20 @@ Let's use the GitHub GUI to start a simple repository.
 
 As an example, let's use the README.md file which is the basis for this webpage.
 
-1. Sign in to GitHub, if not already signed in, and go to the GitHub respository for this page: [https://github.com/cui-lab/cui-lab.github.io](https://github.com/cui-lab/cui-lab.github.io).
-2. Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account
-3. Copy the HTTPS clone URL (notated by `HTTPS_clone_URL`) on the right side of the page.
-4. In the terminal, change directory into your prefered working directory and input the command: `$ git clone HTTPS_clone_URL`
-5. Change directory into cui-lab.github.io and make, and save, some changes to README.md.
-6. Add the README.md file to the index to prepare for the next commit using the command: `$ git add README.md`
-7. Commit this `$ git commit -m "made a few changes"`
-8. Use git push to push to youraccount
-9. On youraccount's GitHub and on the cloned repository, click on Pull Requests, and then click New pull request, the owner will check your pull request and decide whether to accept/merge changes
+1. Install `git` on your computer and set the global user name and user email with the following example terminal commands:
+```bash
+$ git config --global user.name "GitHub_username"
+$ git config --global user.email GitHub_useremail@example.com
+```
+2. Sign in to GitHub, if not already signed in, and go to the GitHub respository for this page: [https://github.com/cui-lab/cui-lab.github.io](https://github.com/cui-lab/cui-lab.github.io).
+3. Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account.
+4. Copy the HTTPS clone URL (notated by `HTTPS_clone_URL`) on the right side of the page.
+5. In the terminal, change directory into your prefered working directory and input the command: `$ git clone HTTPS_clone_URL`
+6. Change directory into cui-lab.github.io and then make, and save, some changes to README.md.
+7. Add the README.md file to the index to prepare for the next commit using the command: `$ git add README.md`
+8. Commit and comment (in quotes, after the `-m` option) on your commit using the example command: `$ git commit -m "made a few changes"`
+9. Push the committed file(s) to your GitHub repository using the command: `$ git push`
+10. On youraccount's GitHub and on the cloned repository, click on Pull Requests, and then click New pull request, the owner will check your pull request and decide whether to accept/merge changes
 
 ### GitHub SSH Key Tutorial
 
@@ -92,9 +97,8 @@ origin  git@github.com:githubusername/test.git (push)
 19. Pull the changed README file into our local directory: $ git pull origin master
 20. Check to see that the local file has the change.  Then make a change with the local computer and repeat steps 15-17 to make the change in the GitHub repository and then confirm the change on the GitHub website
 
+# More on Branching and Merging
 
-
-
-
+Until a simplified tutorial on this is written, allow Google to be your teacher.
 
 
