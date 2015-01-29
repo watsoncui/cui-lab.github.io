@@ -50,7 +50,7 @@ Let's use the GitHub GUI to start a simple repository.  Many GitHub tutorials gi
 
 ### GitHub Pull Request Tutorial
 
-"Pull request" means that you want to collaborate on someone else's repository, so you download ("fork") their repository, make some changes to it, then submit it back to them ("pull request") so that they can consider accepting your changes.  As an example, let's use the README.md file which is the basis for this webpage.
+"Pull request" means that you want to collaborate on someone else's repository, so you download ("fork") their repository, make some changes to it, then submit it back to them ("pull request"), so that they can consider accepting your changes.  As an example, let's use the README.md file which is the basis for this webpage.
 
 1. Install `git` on your computer and set the global user name and user email with the following example terminal commands:
 `$ git config --global user.name "GitHub_username"`, then `$ git config --global user.email GitHub_useremail@example.com`.
