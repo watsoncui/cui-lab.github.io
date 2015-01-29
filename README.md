@@ -39,7 +39,7 @@ No private repositories are possible with a standard free GitHub account, so ple
 
 Good question.  Yes, GitHub is different from Git.  To simply explain the difference, [Git](http://en.wikipedia.org/wiki/Git_%28software%29) is a command-lineversion control tool that can work on a local computer without the use of the internet.  Git is the software system that GitHub works on.  [GitHub](http://en.wikipedia.org/wiki/GitHub) hosts online Git repositories and provides a web-based GUI so that multiple users can easily collaborate on repositories.
 
-Please try the following tutorials to get more familiar with both Git and GitHub.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, which are most important to our lab, into these few tutorials.  Yes, there will be a learning curve, but using distributed version control for research will (probably) save time in the long run.
+Please try the following tutorials to get more familiar with both Git and GitHub.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, which are most important to our lab, into these few tutorials.  Yes, there will be a learning curve, but using version control for research will (probably) save time in the long run.
 
 ### GitHub "Hello, world!" Tutorial
 
