@@ -89,7 +89,7 @@ The `origin master` indicate that we are pushing into the repository named origi
 13. Pull the changed README.txt file into our local directory using the following terminal command: `$ git pull origin master`
 14. Check to see that the local file has the most recent changes.  Then make other changes with your local computer and use the commands in step 11 to see the changes reflected in the GitHub repository and then confirm the changes on the GitHub website.
 
-# More on Branching and Merging
+### More on Branching and Merging
 
 Until a simplified tutorial on this is written, allow Google to be your teacher.
 
