@@ -53,8 +53,7 @@ Let's use the GitHub GUI to start a simple repository.
 As an example, let's use the README.md file which is the basis for this webpage.
 
 1. Install `git` on your computer and set the global user name and user email with the following example terminal commands:
-`$ git config --global user.name "GitHub_username"
-$ git config --global user.email GitHub_useremail@example.com`
+`$ git config --global user.name "GitHub_username"; git config --global user.email GitHub_useremail@example.com`
 2. Sign in to GitHub, if not already signed in, and go to the GitHub respository for this page: [https://github.com/cui-lab/cui-lab.github.io](https://github.com/cui-lab/cui-lab.github.io).
 3. Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account.
 4. Copy the HTTPS clone URL (notated by `HTTPS_clone_URL`) on the right side of the page.
@@ -80,16 +79,11 @@ If you don't want to have to input your username and password each time you `git
 8. Start an new GitHub respository called test.
 9. Make a new directory for your respository, on your local computer, and cd into this directory.
 10. Use the following commands, making sure to replace `GitHub_username` with your GitHub username:
-`$ git init
-$ git remote add origin git@github.com:GitHub_username/test.git
-$ git remote -v`
+`$ git init; git remote add origin git@github.com:GitHub_username/test.git; git remote -v`
 The output should be:
-`origin  git@github.com:GitHub_username/test.git (fetch)
-origin  git@github.com:GitHub_username/test.git (push)`
+`origin  git@github.com:GitHub_username/test.git (fetch) origin  git@github.com:GitHub_username/test.git (push)`
 11. Create a README.txt text file in your repository's directory, then use the following commands:
-`$ git add README.txt
-$ git commit -m "some comment about the commit"
-$ git push origin master`
+`$ git add README.txt; git commit -m "some comment about the commit"; git push origin master`
 The `origin master` indicate that we are pushing into the repository named origin and the master branch.  Unlike in the previous tutorial, you will not need to input your GitHub username and password.
 12. The README.txt should appear on the GitHub website.  Make some changes to this file using the GitHub website and commit the changes to the master branch.
 13. Pull the changed README.txt file into our local directory using the following terminal command: `$ git pull origin master`
