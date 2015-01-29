@@ -77,7 +77,7 @@
 <h3>
 <a id="github-hello-world-tutorial" class="anchor" href="#github-hello-world-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub "Hello, world!" Tutorial</h3>
 
-<p>Let's use the GitHub GUI to start a simple repository.</p>
+<p>Let's use the GitHub GUI to start a simple repository.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, most important to our lab, into these few tutorials.</p>
 
 <ol>
 <li>Create a GitHub user account at <a href="https://github.com/">github.com</a>.</li>
@@ -91,54 +91,54 @@
 <h3>
 <a id="github-pull-request-tutorial" class="anchor" href="#github-pull-request-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Pull Request Tutorial</h3>
 
-<p>As an example, let's use the README.md file which is the basis for this webpage.</p>
+<p>"Pull request" means that you want to collaborate on someone else's repository, so you download ("fork") their repository, make some changes to it, then submit it back to them ("pull request"), so that they can consider accepting your changes.  As an example, let's use the README.md file which is the basis for this webpage.</p>
 
 <ol>
+<li>Install <code>git</code> on your computer and set the global user name and user email with the following example terminal commands:
+<code>$ git config --global user.name "GitHub_username"</code>, then <code>$ git config --global user.email GitHub_useremail@example.com</code>.</li>
 <li>Sign in to GitHub, if not already signed in, and go to the GitHub respository for this page: <a href="https://github.com/cui-lab/cui-lab.github.io">https://github.com/cui-lab/cui-lab.github.io</a>.</li>
-<li>Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account</li>
-<li>Copy the HTTPS clone URL (notated by <code>*HTTPS_clone_URL*</code>) on the right side of the page.</li>
-<li>In the terminal, change directory into your prefered working directory and input the command: <code>$ git clone *HTTPS_clone_URL*</code>
-</li>
-<li>Change directory into cui-lab.github.io and make and save some changes to README.md.</li>
-<li>Input the following terminal commands <code>$ git add README.md</code>
-</li>
-<li>$ git commit -m "made a few changes" # -m means comment</li>
-<li>Use git push to push to youraccount</li>
-<li>On youraccount's GitHub and on the cloned repository, click on Pull Requests, and then click New pull request, the owner will check your pull request and decide whether to accept/merge changes</li>
+<li>Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account.</li>
+<li>Copy the HTTPS clone URL (notated by <code>HTTPS_clone_URL</code>) on the right side of the page.</li>
+<li>In the terminal, change directory into your prefered working directory and input the command: <code>$ git clone HTTPS_clone_URL</code>.</li>
+<li>Change directory into cui-lab.github.io and then make, and save, some changes to README.md.</li>
+<li>Add the README.md file to the index to prepare for the next commit using the command: <code>$ git add README.md</code>.</li>
+<li>Commit and comment (in quotes, after the <code>-m</code> option) on your commit using the example command: <code>$ git commit -m "made a few changes"</code>.</li>
+<li>Push the committed file(s) to your GitHub repository using the following command and then inputing your username and password: <code>$ git push</code>.</li>
+<li>You should then see the changes on the cloned repository on your account.  If you would like to submit your changes to the original owner of the cloned repository, then on the page for your cloned repository, click on the "Pull Requests" and create a new pull request.  The owner will check your pull request and decide whether to accept and merge your changes.</li>
 </ol>
 
 <h3>
 <a id="github-ssh-key-tutorial" class="anchor" href="#github-ssh-key-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub SSH Key Tutorial</h3>
 
-<p>Because putting in the username and password each time is a hassle...</p>
+<p>Use an SSH key if you don't want to have to input your username and password each time you <code>git push</code>.</p>
 
 <ol>
-<li>Assuming you have a GitHub account and git is installed on your computer</li>
-<li>Change directory to ~/.ssh and check to see if you already have an rsa key, if you do, you can skip steps 3-5</li>
-<li>Generate the SSH key with $ ssh-keygen -t rsa</li>
-<li>Replace 'user' in the following question, with a user name: "Enter file in which to save the key (/home/user/.ssh/id_rsa): user_id_rsa</li>
-<li>Do not enter a passphrase</li>
-<li>GitHub youraccount settings &gt; SSH keys under personal settings &gt; Add SSH key</li>
-<li>$ cat cui-lab_id_rsa.pub and copy the key and paste it into the SSH keys website with a title (like the name of the computer) and click on Add key</li>
-<li>Verify that everything is okay by using $ ssh -T <a href="mailto:git@github.com">git@github.com</a>
-Hopefully the output states: Hi! You've successfully authenticated, but GitHub does not provide shell access.
-If it states something else, follow the directions</li>
-<li>Start an new GitHub respository called test</li>
-<li>Make a new directory for your respository ~/github$ mkdir test and cd into this directory</li>
-<li>~/github/test$ git init</li>
-<li>$ git remote add origin <a href="mailto:git@github.com">git@github.com</a>:githubusername/test.git</li>
-<li>$ git remote -v
-we should see:
-origin  <a href="mailto:git@github.com">git@github.com</a>:githubusername/test.git (fetch)
-origin  <a href="mailto:git@github.com">git@github.com</a>:githubusername/test.git (push)</li>
-<li>Create a README text file</li>
-<li>$ git add README</li>
-<li>$ git commit -m "some comment about the commit"</li>
-<li>$ git push origin master # Where we are listing the default values of origin (respository) and master (branch)</li>
-<li>Edit the file on the GitHub website and commit changes to the master branch</li>
-<li>Pull the changed README file into our local directory: $ git pull origin master</li>
-<li>Check to see that the local file has the change.  Then make a change with the local computer and repeat steps 15-17 to make the change in the GitHub repository and then confirm the change on the GitHub website</li>
+<li>Assuming you have a GitHub account and git is installed on your computer, change directory to ~/.ssh and check to see if you already have a public RSA key.  If you do, skip steps 2-4.</li>
+<li>Generate an SSH key with the command: <code>$ ssh-keygen -t rsa</code>.</li>
+<li>Upon the question, "Enter file in which to save the key (/home/user/.ssh/id_rsa):", use something like "user_id_rsa", but replace the "user" part. </li>
+<li>Do not enter a passphrase.</li>
+<li>After logging in to GitHub, open Settings &gt; SSH keys &gt; Add SSH key.</li>
+<li>The public key can be copied from <code>$ cat user_id_rsa.pub</code> and pasted in the "Key" space.  After adding a title, for instance the name of the computer, click on Add key.</li>
+<li>Verify that the SSH key was correctly set up by using this terminal command: <code>$ ssh -T git@github.com</code>.  Hopefully the output states something like:
+<code>Hi! You've successfully authenticated, but GitHub does not provide shell access.</code>  If not, then follow the given instructions, or Google the output for help online.</li>
+<li>Start an new GitHub respository called test.</li>
+<li>Make a new directory for your respository, on your local computer, and change directory into this directory.</li>
+<li>Use the following commands, making sure to replace <code>GitHub_username</code> with your GitHub username:
+<code>$ git init</code>, then <code>$ git remote add origin git@github.com:GitHub_username/test.git</code> and then <code>$ git remote -v</code>.
+The output should be:
+<code>origin  git@github.com:GitHub_username/test.git (fetch)</code> and <code>origin  git@github.com:GitHub_username/test.git (push)</code>.</li>
+<li>Create a README.txt text file in your repository's directory, then use the following commands:
+<code>$ git add README.txt</code>, then <code>$ git commit -m "some comment about the commit"</code> and then <code>$ git push origin master</code>.
+The <code>origin master</code> part indicates that we are pushing into the repository named "origin", and specifically the "master" branch of "origin".  Unlike in the previous tutorial, you will not need to input your GitHub username and password.</li>
+<li>The README.txt should appear on the GitHub website.  Make some changes to this file using the GitHub website and commit the changes to the master branch.</li>
+<li>Pull the changed README.txt file into your local directory using the following terminal command: <code>$ git pull origin master</code>.</li>
+<li>Check to see that the local file has the most recent changes.  Then make other changes with your local computer and use the commands in step 11 to see the changes reflected in the online GitHub repository.</li>
 </ol>
+
+<h3>
+<a id="more-on-branching-and-merging" class="anchor" href="#more-on-branching-and-merging" aria-hidden="true"><span class="octicon octicon-link"></span></a>More on Branching and Merging</h3>
+
+<p>Until a simplified tutorial on this is written, allow Google to be your teacher.</p>
       </section>
     </div>
 
