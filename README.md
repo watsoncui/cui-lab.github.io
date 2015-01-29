@@ -29,7 +29,7 @@ If you have, then version control can help, especially if you code a lot.
 
 ### Why use GitHub for version control?
 
-Not only is GitHub multiplatform (Linux, Mac, Windows) and open source, but users clone (copy) the entire respository (project), so working offline is easy.  Plus, it appears that GitHub is currently (2014) the most popular version control platform (with commits to the cloud), so collaborating with others should be relatively easy with GitHub.
+Not only is GitHub multiplatform (Linux, Mac, Windows) and open source, but users clone (copy) the entire repository (project), so working offline is easy.  Plus, it appears that GitHub is currently (2014) the most popular version control platform (with commits to the cloud), so collaborating with others should be relatively easy with GitHub.
 
 Plus GitHub should handle any text-based file format well, whether that is .R, .tex, .Rnw, .Rmd, .md, .sh, .cpp, .py, etc.
 
@@ -37,7 +37,7 @@ No private repositories are possible with a standard free GitHub account, so ple
 
 ### Is Git different from GitHub?
 
-Good question.  Yes, GitHub is different from Git.  To simply explain the difference, [Git](http://en.wikipedia.org/wiki/Git_%28software%29) is a command-lineversion control tool that can work on a local computer without the use of the internet.  Git is the software system that GitHub works on.  [GitHub](http://en.wikipedia.org/wiki/GitHub) hosts online Git repositories and provides a web-based GUI so that multiple users can easily collaborate on repositories.
+Good question.  Yes, GitHub is different from Git.  To simply explain the difference, [Git](http://en.wikipedia.org/wiki/Git_%28software%29) is a command-line version control tool that can work on a local computer without the use of the internet.  Git is the software system that GitHub works on.  [GitHub](http://en.wikipedia.org/wiki/GitHub) hosts online Git repositories and provides a web-based GUI so that multiple users can easily collaborate on repositories.
 
 Please try the following tutorials to get more familiar with both Git and GitHub.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, which are most important to our lab, into these few tutorials.  Yes, there will be a learning curve, but using version control for research will (probably) save time in the long run.
 
@@ -58,10 +58,10 @@ Let's use the GitHub GUI to start a simple repository.
 
 1. Install `git` on your computer and set the global user name and user email with the following example terminal commands:
 `$ git config --global user.name "GitHub_username"`, then `$ git config --global user.email GitHub_useremail@example.com`.
-2. Sign in to GitHub, if not already signed in, and go to the GitHub respository for this page: [https://github.com/cui-lab/cui-lab.github.io](https://github.com/cui-lab/cui-lab.github.io).
-3. Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account.
+2. Sign in to GitHub, if not already signed in, and go to the GitHub repository for this page: [https://github.com/cui-lab/cui-lab.github.io](https://github.com/cui-lab/cui-lab.github.io).
+3. Click the "Fork" button, to fork your own copy of the cui-lab.github.io repository to your account.
 4. Copy the HTTPS clone URL (notated by `HTTPS_clone_URL`) on the right side of the page.
-5. In the terminal, change directory into your prefered working directory and input the command: `$ git clone HTTPS_clone_URL`.
+5. In the terminal, change directory into your preferred working directory and input the command: `$ git clone HTTPS_clone_URL`.
 6. Change directory into cui-lab.github.io and then make, and save, some changes to README.md.
 7. Add the README.md file to the index to prepare for the next commit using the command: `$ git add README.md`.
 8. Commit and comment (in quotes, after the `-m` option) on your commit using the example command: `$ git commit -m "made a few changes"`.
@@ -80,8 +80,8 @@ Use an SSH key if you don't want to have to input your username and password eac
 6. The public key can be copied from `$ cat user_id_rsa.pub` and pasted in the "Key" space.  After adding a title, for instance the name of the computer, click on Add key.
 7. Verify that the SSH key was correctly set up by using this terminal command: `$ ssh -T git@github.com`.  Hopefully the output states something like:
 `Hi! You've successfully authenticated, but GitHub does not provide shell access.`  If not, then follow the given instructions, or Google the output for help online.
-8. Start an new GitHub respository called test.
-9. Make a new directory for your respository, on your local computer, and change directory into this directory.
+8. Start an new GitHub repository called test.
+9. Make a new directory for your repository, on your local computer, and change directory into this directory.
 10. Use the following commands, making sure to replace `GitHub_username` with your GitHub username:
 `$ git init`, then `$ git remote add origin git@github.com:GitHub_username/test.git` and then `$ git remote -v`.
 The output should be:
