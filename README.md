@@ -35,13 +35,11 @@ Plus GitHub should handle any text-based file format well, whether that is .R, .
 
 No private repositories are possible with a standard free GitHub account, so please apply for an [educational discount](https://education.github.com/discount_requests/new) after signing in with your University email address.  Your account [should](https://github.com/blog/1775-github-goes-to-school) be upgraded to a free Micro account for the next two years, which means up to 5 private repositories.  If 5 private repositories per user is insufficient, then instead of GitHub, we can consider using [Bitbucket](https://bitbucket.org/plans), which has an "unlimited academic plan".
 
-There are plenty of GitHub tutorials online in both written and video formats.  Yes, there is a learning curve, but using version control, like GitHub, will save time in the long run.
-
 ### Is Git different from GitHub?
 
 Good question.  Yes, GitHub is different from Git.  To simply explain the difference, [Git](http://en.wikipedia.org/wiki/Git_%28software%29) is a command-lineversion control tool that can work on a local computer without the use of the internet.  Git is the software system that GitHub works on.  [GitHub](http://en.wikipedia.org/wiki/GitHub) hosts online Git repositories and provides a web-based GUI so that multiple users can easily collaborate on repositories.
 
-Please try the following tutorials to get more familiar with both Git and GitHub.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, which are most important to our lab, into these few tutorials.
+Please try the following tutorials to get more familiar with both Git and GitHub.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, which are most important to our lab, into these few tutorials.  Yes, there will be a learning curve, but using distributed version control for research will (probably) save time in the long run.
 
 ### GitHub "Hello, world!" Tutorial
 
