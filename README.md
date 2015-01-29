@@ -53,15 +53,15 @@ Let's use the GitHub GUI to start a simple repository.
 As an example, let's use the README.md file which is the basis for this webpage.
 
 1. Install `git` on your computer and set the global user name and user email with the following example terminal commands:
-`$ git config --global user.name "GitHub_username"; git config --global user.email GitHub_useremail@example.com`
+`$ git config --global user.name "GitHub_username"`, then `$ git config --global user.email GitHub_useremail@example.com`.
 2. Sign in to GitHub, if not already signed in, and go to the GitHub respository for this page: [https://github.com/cui-lab/cui-lab.github.io](https://github.com/cui-lab/cui-lab.github.io).
 3. Click the "Fork" button, to fork your own copy of the cui-lab.github.io respository to your account.
 4. Copy the HTTPS clone URL (notated by `HTTPS_clone_URL`) on the right side of the page.
-5. In the terminal, change directory into your prefered working directory and input the command: `$ git clone HTTPS_clone_URL`
+5. In the terminal, change directory into your prefered working directory and input the command: `$ git clone HTTPS_clone_URL`.
 6. Change directory into cui-lab.github.io and then make, and save, some changes to README.md.
-7. Add the README.md file to the index to prepare for the next commit using the command: `$ git add README.md`
-8. Commit and comment (in quotes, after the `-m` option) on your commit using the example command: `$ git commit -m "made a few changes"`
-9. Push the committed file(s) to your GitHub repository using the following command and then inputing your username and password: `$ git push`
+7. Add the README.md file to the index to prepare for the next commit using the command: `$ git add README.md`.
+8. Commit and comment (in quotes, after the `-m` option) on your commit using the example command: `$ git commit -m "made a few changes"`.
+9. Push the committed file(s) to your GitHub repository using the following command and then inputing your username and password: `$ git push`.
 10. You should then see the changes on the cloned repository on your account.  If you would like to submit your changes to the original owner of the cloned repository, then on the page for your cloned repository, click on the "Pull Requests" and create a new pull request.  The owner will check your pull request and decide whether to accept and merge your changes.
 
 ### GitHub SSH Key Tutorial
@@ -69,7 +69,7 @@ As an example, let's use the README.md file which is the basis for this webpage.
 If you don't want to have to input your username and password each time you `git push`.
 
 1. Assuming you have a GitHub account and git is installed on your computer, change directory to ~/.ssh and check to see if you already have a public RSA key.  If you do, skip steps 2-4.
-2. Generate an SSH key with the command: `$ ssh-keygen -t rsa`
+2. Generate an SSH key with the command: `$ ssh-keygen -t rsa`.
 3. Upon the question, "Enter file in which to save the key (/home/user/.ssh/id_rsa):", use something like "user_id_rsa", but replace the "user" part. 
 4. Do not enter a passphrase.
 5. After logging in to GitHub, open Settings > SSH keys > Add SSH key.
@@ -79,15 +79,15 @@ If you don't want to have to input your username and password each time you `git
 8. Start an new GitHub respository called test.
 9. Make a new directory for your respository, on your local computer, and cd into this directory.
 10. Use the following commands, making sure to replace `GitHub_username` with your GitHub username:
-`$ git init; git remote add origin git@github.com:GitHub_username/test.git; git remote -v`
+`$ git init`, then `$ git remote add origin git@github.com:GitHub_username/test.git` and then `$ git remote -v`.
 The output should be:
-`origin  git@github.com:GitHub_username/test.git (fetch) origin  git@github.com:GitHub_username/test.git (push)`
+`origin  git@github.com:GitHub_username/test.git (fetch)` and `origin  git@github.com:GitHub_username/test.git (push)`.
 11. Create a README.txt text file in your repository's directory, then use the following commands:
-`$ git add README.txt; git commit -m "some comment about the commit"; git push origin master`
-The `origin master` indicate that we are pushing into the repository named origin and the master branch.  Unlike in the previous tutorial, you will not need to input your GitHub username and password.
+`$ git add README.txt`, then `$ git commit -m "some comment about the commit"` and then `$ git push origin master`.
+The `origin master` part indicates that we are pushing into the repository named "origin" and the "master" branch.  Unlike in the previous tutorial, you will not need to input your GitHub username and password.
 12. The README.txt should appear on the GitHub website.  Make some changes to this file using the GitHub website and commit the changes to the master branch.
-13. Pull the changed README.txt file into our local directory using the following terminal command: `$ git pull origin master`
-14. Check to see that the local file has the most recent changes.  Then make other changes with your local computer and use the commands in step 11 to see the changes reflected in the GitHub repository and then confirm the changes on the GitHub website.
+13. Pull the changed README.txt file into our local directory using the following terminal command: `$ git pull origin master`.
+14. Check to see that the local file has the most recent changes.  Then make other changes with your local computer and use the commands in step 11 to see the changes reflected in the online GitHub repository.
 
 ### More on Branching and Merging
 
