@@ -41,9 +41,11 @@ There are plenty of GitHub tutorials online in both written and video formats.  
 
 Good question.  Yes, GitHub is different from Git.  To simply explain the difference, [Git](http://en.wikipedia.org/wiki/Git_%28software%29) is a command-lineversion control tool that can work on a local computer without the use of the internet.  Git is the software system that GitHub works on.  [GitHub](http://en.wikipedia.org/wiki/GitHub) hosts online Git repositories and provides a web-based GUI so that multiple users can easily collaborate on repositories.
 
+Please try the following tutorials to get more familiar with both Git and GitHub.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, which are most important to our lab, into these few tutorials.
+
 ### GitHub "Hello, world!" Tutorial
 
-Let's use the GitHub GUI to start a simple repository.  Many GitHub tutorials give much more detail than is necessary, so I thought that we could distill the GitHub tasks, most important to our lab, into these few tutorials.
+Let's use the GitHub GUI to start a simple repository.
 
 1. Create a GitHub user account at [github.com](https://github.com/).
 2. Once logged in, click the "+" (plus) sign in the top right-hand corner, and select "New repository".
